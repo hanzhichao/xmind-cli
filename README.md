@@ -2,6 +2,12 @@
 
 A full-featured command-line interface tool to parse, create, and convert XMind files in Python. Supports modern `.xmind` files (XMind ZEN and newer).
 
+![Languate - Python](https://img.shields.io/badge/language-python-blue.svg)
+![PyPI - License](https://img.shields.io/pypi/l/python-xmind-cli)
+![PyPI](https://img.shields.io/pypi/v/python-xmind-cli)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/python-xmind-cli)
+
+
 ## Installation
 
 ```bash
@@ -66,3 +72,8 @@ The Markdown parser supports rich node attributes:
 ```bash
 pytest
 ```
+
+
+## License
+
+MIT
