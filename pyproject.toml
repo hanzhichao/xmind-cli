@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-xmind-cli"
+version = "0.1.0"
+description = "A full-featured CLI tool for parsing, creating, and converting XMind files."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "openpyxl>=3.1.0",
+    "PyYAML>=6.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/hanzhichao/xmind-cli"
+Issues = "https://github.com/hanzhichao/xmind-cli/issues"
+
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+xmind-cli = "xmind_cli.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["xmind_cli", "xmind_cli.*"]
